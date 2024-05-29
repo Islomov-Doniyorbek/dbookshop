@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 16px;
+}
+body {
+    position: relative;
+}
+.container {
+    position: relative;
+    /* display: none; */
+}
+.header-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.head img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.head #titleCar {
+    position: absolute;
+    bottom: 120px;
+    left: 120px;
+    font-size: 24px;
+    color: snow;
+    font-weight: 800;
+    -webkit-text-stroke: 0.4px azure;
+}
+.head .nav {
+    z-index: 100000;
+    position: fixed;
+    transform: translate(-50%,10%);
+    top: 5%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 12px 15px 12px 15px;
+    border-radius: 30px;
+    width: 80%;
+    background-color: rgba(255, 127, 80, 0.618);
+    transition: 0.9s;
+    /* z-index: 45; */
+}
+.nav:hover {
+    background: #0000166d;
+}
+.nav:hover a {
+    color: azure;
+}
+.nav a {
+    color: yellow;
+    font-weight: 800;
+    /* font-weight: 100; */
+    font-size: 18px;
+}
+h3 {
+    text-align: center;
+    font-size: 34px;
+    color: blue;
+    -webkit-text-stroke: 0.4px gold;
+    font-weight: 700;
+    transition-delay: 0.5s;
+    transition: 1s;
+    background-color: #549ffc;
+}
+
+h1.title {
+    position: relative;
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+.all {
+    margin-top: 120px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.all .books {
+    /* margin: 0 auto; */
+    position: relative;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    min-height: 500px;
+}
+.all .card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 300px; */
+    height: 300px;
+    border-radius: 12px;
+    border: 1.2px solid silver;
+    background: snow;
+    padding: 0 5px 0 5px;
+}
+.card .img {
+    width: 70%;
+    height: 60%;
+    position: relative;
+    padding: 5px 10px 5px 10px;
+}
+.card .img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card .context {
+    border-top: 1px solid silver;
+    padding: 8px 5px 5px 5px;
+    position: relative;
+    height: 39%;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: azure;
+    gap: 5px;
+}
+.context p {
+    font-size: 16px;
+}
+.context b {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.context button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid brown;
+    padding: 5px 8px 5px 8px;
+    background: chocolate;
+    color: brown;
+}
+.all h1 {
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+    color: coral;
+}
+.all p[p] {
+    position: relative;
+    color: chocolate;
+    margin: 10px;
+}
+.footer {
+    margin-top: 50px;
+    position: relative;
+    padding: 20px 35px 20px 35px;
+    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer p {
+    color: brown;
+}
+.footer .right i {
+    color: rgba(240, 17, 5, 0.622);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+.container2 {
+    display: none;
+    position: relative;
+}
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container2 .badiiy {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 70%;
+    padding: 25px 10px 10px 10px;
+}
+.badiiy .cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 350px;
+    box-shadow: inset 0 0 5px 1px coral;
+    padding: 5px 10px 5px 10px;
+    background: beige;
+    border-radius: 12px;
+}
+.cart .img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    padding: 5px 15px;
+}
+.cart .img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cart .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 39%;
+    width: 100%;
+}
+.cart .content .name {
+    height: 50px;
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.cart .cost {
+    font-size: 18px;
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+.cart button {
+    position: relative;
+    cursor: pointer;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: magenta;
+    border: 1px solid coral;
+}
+
+
+.container3 {
+    display: none;
+    position: relative;
+}
+.container3 .fantastic {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 70%;
+    padding: 25px 10px 10px 10px;
+}
+.wrapper h1 {
+    position: relative;
+    font-size: 38px;
+    color: chocolate;
+}
+.fantastic .cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 350px;
+    box-shadow: inset 0 0 5px 1px coral;
+    padding: 5px 10px 5px 10px;
+    background: beige;
+    border-radius: 12px;
+}
+.cart .img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    padding: 5px 15px;
+}
+.cart .img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cart .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 39%;
+    width: 100%;
+}
+.cart .content .name {
+    height: 50px;
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.cart .cost {
+    font-size: 18px;
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+.cart button {
+    position: relative;
+    cursor: pointer;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: magenta;
+    border: 1px solid coral;
+}
+
+
+.container4 {
+    display: none;
+    position: relative;
+}
+.container4 .romantic {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 70%;
+    padding: 25px 10px 10px 10px;
+}
+.wrapper h1 {
+    position: relative;
+    font-size: 38px;
+    color: chocolate;
+}
+.romantic .cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 350px;
+    box-shadow: inset 0 0 5px 1px coral;
+    padding: 5px 10px 5px 10px;
+    background: beige;
+    border-radius: 12px;
+}
+.cart .img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    padding: 5px 15px;
+}
+.cart .img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cart .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 39%;
+    width: 100%;
+}
+.cart .content .name {
+    height: 50px;
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.cart .cost {
+    font-size: 18px;
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+.cart button {
+    position: relative;
+    cursor: pointer;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: magenta;
+    border: 1px solid coral;
+}
+/* .takliflar .content  */
+
+.container5 {
+    display: none;
+    position: relative;
+}
+.container5 .children {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 70%;
+    padding: 25px 10px 10px 10px;
+}
+.wrapper h1 {
+    position: relative;
+    font-size: 38px;
+    color: chocolate;
+}
+.children .cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 350px;
+    box-shadow: inset 0 0 5px 1px coral;
+    padding: 5px 10px 5px 10px;
+    background: beige;
+    border-radius: 12px;
+}
+.cart .img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    padding: 5px 15px;
+}
+.cart .img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cart .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 39%;
+    width: 100%;
+}
+.cart .content .name {
+    height: 50px;
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.cart .cost {
+    font-size: 18px;
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+.cart button {
+    position: relative;
+    cursor: pointer;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: magenta;
+    border: 1px solid coral;
+}
+
+
+.container7 {
+    display: none;
+    position: relative;
+}
+.container7 h2 {
+    position: relative;
+    text-align: center;
+    font-size: 34px;
+    color: navy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 10px 10px 10px;
+}
+.container7 form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: azure;
+    padding-top: 25px;
+}
+.container7 form .fluid {
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 20%;
+}
+.fluid input, label, .fluid button {
+    width: 70%;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.9s;
+    cursor: pointer;
+}
+.fluid input {
+    padding: 10px 20px 10px 20px;
+    border: 1.4px solid silver;
+}
+.fluid button {
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    border: 1.4px solid silver;
+}
+.fluid input:hover {
+    background: azure;
+    color: black;
+    border-color: blue;
+    box-shadow: 0 0 15px 1px navy;
+}
+.fluid button:hover {
+    background: azure;
+    color: black;
+    border-color: blue;
+    box-shadow: 0 0 15px 1px navy;
+}
+
+
+
+.hide {
+    display: none;
+}
+.screen {
+    display: block;
+}
